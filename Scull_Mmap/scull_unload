@@ -1,0 +1,9 @@
+module="scull_mmap"
+device="scull_mmap"
+major=$(awk "\$2==\"$device\" {print \$1}" /proc/devices)
+rm -f /dev/${device}0
+rm -f /dev/${device}1
+rm -f /dev/${device}2
+rm -f /dev/${device}3
+
+rmmod $module

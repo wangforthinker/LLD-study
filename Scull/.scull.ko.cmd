@@ -1,0 +1,1 @@
+cmd_/home/wang/code/Scull/scull.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.8.0-29-generic/scripts/module-common.lds --build-id  -o /home/wang/code/Scull/scull.ko /home/wang/code/Scull/scull.o /home/wang/code/Scull/scull.mod.o
